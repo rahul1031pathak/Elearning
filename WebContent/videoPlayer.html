@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<TITLE>Amazon CloudFront Streaming with JW Player 7</TITLE>	
+
+<!-- Call the JW Player JavaScript file, jwplayer.js. 
+Replace WEB-DISTRIBUTION-DOMAIN-NAME with the domain name of your 
+CloudFront web distribution, for example, d1234.cloudfront.net 
+(begins with "d"). This causes a browser to download the JW Player file 
+before streaming begins.
+
+Replace LICENSE-KEY with your personal license key from JW Player.
+-->
+
+<script src="//vjs.zencdn.net/4.12/video.js"></script>
+<script src="https://cdn.viblast.com/vb/stable/viblast.js" type="text/javascript"></script>
+<link href="//vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+
+</HEAD>
+
+<BODY>
+<video
+  controls
+  height="400"
+  width="550"
+  src="https://dk9ann4zroz1t.cloudfront.net/cfx/st/bunny2/master.m3u8"
+  data-viblast-key="7d819bc6-d4f5-47a1-b318-183bca65229e"
+  autoplay
+>
+
+</video>
+</BODY>
+</HTML>

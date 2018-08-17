@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>StudyFromWeb | Online Teaching Learning Platform</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans|Ubuntu" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://www.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Dosis:700,100" rel="stylesheet">
+<style>
+body{
+margin:0;
+padding:0;
+background-color:#47ADDD;
+}
+.header{
+position:relative;
+display:flex;
+justify-content:flex-end;
+}
+.header ul{
+float:right;
+position:relative;
+list-style-type:none;
+margin:none;
+padding:none;
+margin-right:100px;
+margin-top:20px;
+
+}
+.header ul li
+{
+display:inline-flex;
+justify-content:right;
+
+}
+.header ul li button
+{
+position:relative;
+font-family:"PT sans",sans-serif;
+border:none;
+background:transparent;
+color:#ffffff;
+padding:10px;
+font-size:12px;
+line-height:12px;
+text-align:center;
+min-height:12px;
+width:97px;
+border-radius: 5px;
+}
+.header ul li button.signup{
+
+background-color:#1E293E;
+}
+.header ul li button.signup:hover{
+
+background-color:#3EC460;
+}
+.header ul li button.login
+{
+border:1px solid white;
+margin-right:15px;
+}
+.header ul li button.institution
+{
+border:1px solid white;
+margin-left:15px;
+}
+.header ul li button.login:hover,
+.header ul li button.institution:hover
+{
+background-color:#ffffff;
+color:#47ADDD;
+}
+.header ul li button.signup:focus,
+.header ul li button.login:focus,
+.header ul li button.institution:focus
+{
+outline:none;
+}
+.loginPOPUP{
+z-index:1;
+position:absolute;
+display:none;
+width:400px;
+right: 0;
+left: 0;
+margin:30px auto;
+flex-direction:column;
+justify-content:center;
+box-shadow: 0px 1px 4px rgba(0,0,0,0.24);
+background-color: #F3F3F3;
+border-color: transparent;
+border-radius: 1px;
+opacity:1;
+border-width: 0px;
+}
+.loginPOPUP p
+{
+font-family:"PT sans",sans-serif;
+font-size:18px;
+text-align:center;
+color:#47ADDD;
+margin-top:10px;
+}
+.loginPOPUP ul
+{
+list-style-type:none;
+margin:0;
+padding:0;
+text-align:center;
+}
+.loginPOPUP ul li
+{
+display:inline;
+}
+.loginPOPUP ul li button
+{
+font-family:"PT sans",sans-serif;
+border:none;
+background:transparent;
+color:#000;
+padding:10px;
+font-size:14px;
+line-height:12px;
+text-align:center;
+min-height:12px;
+width:160px;
+margin-top:30px;
+}
+.loginPOPUP ul li button.userLogin
+{
+border-bottom:2px solid #47ADDD;
+}
+.userLogin:focus,
+.instituteLogin:focus
+{
+outline:none;
+}
+.facebooklogin{
+
+font-family:"PT sans",sans-serif;
+font-size:17px;
+width:250px;
+border:none;
+margin:30px auto;
+justify-content:center;
+background:#3b5998;
+color:#fff;
+padding:8px;
+}
+.userLoginForm
+{
+display:flex;
+flex-direction:column;
+width:80%;
+justify-content:center;
+margin:0px auto;
+}
+.userLoginForm input[type=text],
+.userLoginForm input[type=email],
+.userLoginForm input[type=password]
+{
+font-family:"PT sans",sans-serif;
+margin-bottom:15px;
+background:transparent;
+border:none;
+padding-left:8px;
+border-bottom:1px solid #47ADDD;
+height:35px;
+}
+.userLoginForm input[type=text]:focus,
+.userLoginForm input[type=email]:focus,
+.userLoginForm input[type=password]:focus
+{
+outline:none;
+}
+.userLoginForm input[type=submit]
+{
+border:0;
+font-family:"PT sans",sans-serif;
+background:#47ADDD;
+color:#fff;
+margin:8px auto;
+justify-content:center;
+padding:8px;
+width:200px;
+margin-bottom:15px;
+}
+.usersection{
+display:flex;
+justify-content:center;
+flex-direction:column;
+}
+.institutesection{
+margin-top:20px;
+display:none;
+justify-content:center;
+flex-direction:column;
+}
+.loginclose{
+position:absolute;
+right:15px;
+font-family:"PT sans",sans-serif;
+
+font-size:16px;
+top:0;
+cursor:pointer;
+}
+.signupclose{
+position:absolute;
+right:15px;
+font-family:"PT sans",sans-serif;
+
+font-size:18px;
+top:0;
+cursor:pointer;
+color:#47ADDD;
+}
+.signupPOPUP{
+z-index:1;
+position:absolute;
+display:none;
+width:400px;
+right: 0;
+left: 0;
+margin:20px auto;
+flex-direction:column;
+justify-content:center;
+box-shadow: 0px 1px 4px rgba(0,0,0,0.24);
+background-color: rgba(243,243,243,1);
+border-color: transparent;
+border-radius: 1px;
+opacity:1;
+border-width: 0px;
+}
+
+.createAccont{
+font-family:"PT sans",sans-serif;
+color:#47ADDD;
+font-size:20px;
+text-align:center;
+margin-top:20px;
+}
+.signupPOPUP .facebooklogin{
+
+font-family:"PT sans",sans-serif;
+font-size:17px;
+width:250px;
+border:none;
+margin:10px auto;
+justify-content:center;
+background:#3b5998;
+color:#fff;
+padding:8px;
+}
+.websiteInformation
+{
+display:flex;
+flex-direction:column;
+justify-content:center;
+position:relative;
+margin:100px auto;
+}
+.websiteInformation p
+{
+font-family:"PT sans",sans-serif;
+text-align:center;
+color:#fff;
+font-size:18px;
+font-weight:100;
+padding:0;
+margin:0;
+}
+.websiteInformation .dedicated{
+font-family:dosis,sans-serif;
+font-size:60px;
+font-weight:700;
+letter-spacing:1px;
+text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+background-color: transparent;
+}
+.websiteInformation .otl,.websiteInformation .for
+{
+font-family:dosis,sans-serif;
+letter-spacing:1px;
+color:#1E293E;
+font-size:18px;
+font-weight:700;
+}
+.institutionPOPUP{
+z-index:1;
+position:absolute;
+display:flex;
+width:700px;
+right: 0;
+left: 0;
+margin:10px auto;
+flex-direction:column;
+justify-content:center;
+box-shadow: 0px 1px 4px rgba(0,0,0,0.24);
+background-color: #F3F3F3;
+border-color: transparent;
+border-radius: 1px;
+opacity:1;
+border-width:0px;
+}
+.institutionForm
+{
+display:flex;
+flex-direction:column;
+width:60%;
+justify-content:center;
+margin:3px auto;
+}
+.institutionPOPUP p.alert
+{
+font-family:"PT sans",sans-serif;
+text-align:center;
+font-size:20px;
+color:#47ADDD;
+}
+.institutionForm input[type=text],
+.institutionForm input[type=email],
+.institutionForm input[type=number],
+.institutionForm input[type=password]
+{
+font-family:"PT sans",sans-serif;
+margin-bottom:15px;
+background:transparent;
+border:none;
+padding-left:8px;
+border-bottom:1px solid #47ADDD;
+height:35px;
+}
+.institutionForm input[type=text]:focus,
+.institutionForm input[type=email]:focus,
+.institutionForm input[type=number]:focus,
+.institutionForm input[type=password]:focus
+{
+outline:none;
+}
+.institutionForm input[type=submit]
+{
+border:0;
+font-family:"PT sans",sans-serif;
+background:#47ADDD;
+color:#fff;
+margin:8px auto;
+justify-content:center;
+padding:8px;
+width:200px;
+margin-bottom:15px;
+}
+.textarea_field{
+width:100%;
+margin-top:10px;
+}
+.textarea_field textarea{
+font-family: 'PT sans', sans-serif;
+font-weight:100;
+width:100%;
+border:none;
+border-bottom:1px solid #47ADDD;
+padding-left:5px;
+border-radius:2px;
+background:transparent;
+height:30px;
+resize:none;
+}
+.textarea_field textarea:focus
+{
+border-radius:2px;
+outline:none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+    length:6;
+}
+#colorselector option:first-child
+{
+display:none;
+}
+.dropdown {
+  cursor:pointer;
+         }
+.dropdown select {
+font-family:"PT sans",sans-serif;
+  width:100%;
+  margin:0;
+  background:transparent;
+  border:none;
+  border-bottom:1px solid #47ADDD;
+  outline: none;
+  cursor:pointer;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* Remove select styling */
+  appearance: none;
+  -webkit-appearance: none;
+  /* Magic font size number to prevent iOS text zoom */
+  .font-size:1.25em;
+  /* General select styles: change as needed */
+  /* font-weight: bold; */
+  color: #878787;
+  padding-left:5px;
+  padding-bottom:6px;
+}
+
+</style>
+<script>
+$(document).ready(function(){
+	 $(".instituteLogin").click(function(){
+	        $(this).css({"border-bottom": "2px solid #47ADDD"});
+		    $(".userLogin").css({"border-bottom": "none"});	
+		    $(".usersection").css({"display": "none"});
+		    $(".institutesection").css({"display": "flex"});
+	    });	
+	 
+	 
+	 $(".userLogin").click(function(){
+	        $(this).css({"border-bottom": "2px solid #47ADDD"});
+		    $(".instituteLogin").css({"border-bottom": "none"});
+		    $(".institutesection").css({"display": "none"});
+		    $(".usersection").css({"display": "flex"});
+	    });
+	 
+	 $(".login").click(function(){
+		 $(".signupPOPUP").fadeOut();
+	  $(".loginPOPUP").fadeIn();	 
+	 });
+	 
+	 $(".loginclose").click(function(){
+		  $(".loginPOPUP").fadeOut(500);	 
+		 });
+	 
+	 
+	 $(".signup").click(function(){
+		 $(".loginPOPUP").fadeOut();
+		  $(".signupPOPUP").fadeIn(); 
+		 });
+		 
+		 $(".signupclose").click(function(){
+			  $(".signupPOPUP").fadeOut(500);	 
+			 });
+
+	 
+});
+</script>
+</head>
+<body>
+<div class="header">
+<ul>
+<li><button class="login">LOG IN</button></li>
+<li><button class="signup">SIGN UP</button></li>
+<li><button class="institution">INSTITUTION</button></li>
+</ul>
+</div>
+<div class="loginPOPUP">
+<p>LOG IN AS</p>
+<p class="loginclose">X</p>
+<ul>
+<li><button class="userLogin">USER</button></li>
+<li><button class="instituteLogin">INSTITUTE</button></li>
+</ul>
+<div class="usersection">
+<button class="facebooklogin">Facebook Login</button>
+<p style="color:#000;font-size:14px;margin-top:0px;margin-bottom:20px;">OR</p>
+<form class="userLoginForm">
+<input type="text" placeholder="Email">
+<input type="password" placeholder="Password">
+<input type="submit" value="LOG IN">
+</form>
+<a style="text-align:center;cursor:pointer;margin-bottom:30px;">Forgot Password ?</a>
+</div>
+
+<div class="institutesection">
+<!-- <button class="facebooklogin">Facebook Login</button>   -->
+<!-- <p style="color:#000;font-size:14px;margin-top:0px;margin-bottom:20px;">OR</p>  -->
+<form class="userLoginForm">
+<input type="text" placeholder="Email">
+<input type="password" placeholder="Password">
+<input type="submit" value="LOG IN">
+</form>
+<a style="text-align:center;cursor:pointer;margin-bottom:60px;">Forgot Password ?</a>
+</div>
+</div>
+
+
+<div class="signupPOPUP">
+<div class="usersection">
+<p class="createAccont">CREATE ACCOUNT</p>
+<p class="signupclose">X</p>
+<button class="facebooklogin">Facebook SignUp</button>
+<p style="color:#000;font-size:14px;margin-top:0px;margin-bottom:20px;text-align:center">OR</p>
+<form class="userLoginForm">
+<input type="text" placeholder="Name">
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Password">
+<input type="submit" value="SIGN UP">
+</form>
+<a style="text-align:center;cursor:pointer;margin-bottom:30px;">Resend Verification Link</a>
+</div>
+</div>
+
+<div class="institutionPOPUP">
+<p class="alert">This form is only form institution's Admin.Please leave this if you are not Admin </p>
+<form class="institutionForm">
+		<input class="" type="text" placeholder="Institution Name" required>
+	<div class="button dropdown"> 
+        <select id="colorselector" onchange="yesnoCheck(this);">
+        <option value="red">Select your institution type</option>
+        <option value="coaching">Coaching Classes</option>
+        <option value="college">College</option>
+        <option value="school">School</option>
+        <option value="other">Other</option>
+      </select>
+   </div>
+   
+   
+      <div class="button dropdown coaching" style="margin-top:10px;display:none;" id="coaching" > 
+        <select id="colorselector" onchange="selectother(this);">
+        <option value="red">Category</option>
+        <option value="red">Engineering</option>
+        <option value="yellow">Medical</option>
+        <option value="blue">UPSC</option>
+        <option value="blue">Humanity</option>
+        <option value="blue">Bank</option>
+        <option value="blue">SSC</option>
+        <option value="other">Other</option>
+      </select>
+      </div>
+      
+      <div class="button dropdown school"  style="margin-top:10px;display:none;" id="school"> 
+        <select id="colorselector" onchange="selectother(this);">
+        <option value="red">Category</option>
+        <option value="red">CBSE</option>
+        <option value="yellow">ICSE</option>
+        <option value="blue">State</option>
+        <option value="other">Other</option>
+      </select>
+      </div>
+      
+      <div class="button dropdown college" style="margin-top:10px;display:none;" id="college"> 
+        <select id="colorselector" onchange="selectother(this);">
+        <option value="red">Category</option>
+        <option value="red">Engineering</option>
+        <option value="yellow">Medical</option>
+        <option value="other">Other</option>
+      </select>
+      </div>
+  
+			<input class="" type="text" placeholder="Other" id="other_Selected" style="display:none;" required>
+			<input class="" type="text" placeholder="Address" required>
+			<input class="" type="text" placeholder="City"required>
+			<input class="" type="number" placeholder="Pincode"required>
+			
+  
+   <div class="textarea_field">
+		<textarea placeholder="Please share your vision with us" maxlength="200"></textarea>
+   </div>
+   <div>
+   <!--  <input type="file" id="input-file-now" class="dropify" data-height="300" data-allowed-file-extensions="png jpg jpeg gif" data-show-remove="true"data-show-loader="true"/> -->
+   </div>
+		
+			<input type="submit" value="SUBMIT">
+	
+	</form>
+
+</div>
+
+
+
+
+
+
+
+<div class="websiteInformation">
+<p class="yourown">Your own</p>
+<p class="dedicated">DEDICATED PLATFORM</p>
+<P class="for">for</P>
+<p class="otl">Open teaching & learning</p>
+</div>
+<script>
+    function yesnoCheck(event) {
+    	
+    	if(event.value == "coaching")
+    		{
+    		
+    		document.getElementById("coaching").style.display = "block";
+    		document.getElementById("college").style.display = "none";
+            document.getElementById("school").style.display = "none";
+            document.getElementById("other_Selected").style.display = "none";
+    		}
+    	else if(event.value == "college")
+		{
+		
+		document.getElementById("college").style.display = "block";
+		document.getElementById("school").style.display = "none";
+        document.getElementById("other_Selected").style.display = "none";
+        document.getElementById("coaching").style.display = "none";
+		}
+    	else if(event.value == "school")
+		{
+		
+		document.getElementById("school").style.display = "block";
+		 document.getElementById("coaching").style.display = "none";
+         document.getElementById("college").style.display = "none";
+         document.getElementById("other_Selected").style.display = "none";
+		}
+    	
+    	else if (event.value == "other") {
+            document.getElementById("other_Selected").style.display = "block";
+            document.getElementById("coaching").style.display = "none";
+            document.getElementById("college").style.display = "none";
+            document.getElementById("school").style.display = "none";
+        }
+        
+        else 
+        {
+           
+            document.getElementById("coaching").style.display = "none";
+            document.getElementById("college").style.display = "none";
+            document.getElementById("school").style.display = "none";
+            document.getElementById("other_Selected").style.display = "none";
+        }
+    }
+    
+    
+    function selectother(event) {
+    	
+    	if (event.value == "other") {
+            document.getElementById("other_Selected").style.display = "block";
+            }
+    	else
+    		 document.getElementById("other_Selected").style.display = "none";
+    		
+    }
+</script>
+</body>
+</html>

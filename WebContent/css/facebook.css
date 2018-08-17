@@ -1,0 +1,195 @@
+
+.navbar-default .container-fluid{
+	background:#272727 ;
+	border-radius:0px;
+}
+.navbar-default .navbar-header{
+	margin-top:13px;
+	margin-bottom:13px;
+}
+.navbar-default .navbar-brand{
+	margin-top:-20px;
+	padding-left:25px;
+	pointer-events: none;
+	
+}
+.navbar-default .navbar-brand img
+{
+	height:68px!important;
+}
+.navbar-default .navbar-toggle{
+	margin-top:15px;
+	border:none;
+	color:#fff!mportant;
+	background-color:none;
+	}
+.navbar-default .navbar-toggle .icon-bar{
+	background-color:#fff;
+}
+.navbar-default .container-fluid .navbar-nav{
+	text-decoration:none;
+	margin:0px;
+	
+	z-index:2000;
+}
+.navbar-default .container-fluid .navbar-nav li{
+	z-index:2000;
+	
+}
+.navbar-default  .navbar-nav li:first-child .login-form{
+	margin-top:28px;
+	z-index:2000;
+}
+.navbar-default  .navbar-nav .fb-login{
+	margin-right:50px;
+	margin-left:7px;
+	margin-top:28px;
+	background-color:#339cf5;
+	padding:3px 15px 3px 7px;
+	color:white;
+	z-index:2000;
+
+}
+.navbar-default  .navbar-nav .fb-login:hover{
+
+	color:white;
+	background-color:#2586d8;
+}
+
+
+.fa-facebook{padding-right:7px;}
+.login-form input[type=text],
+.login-form input[type=password]
+{
+	width:140px;
+	border:none;
+	height:26px;
+	font-size:13px;
+	z-index:2000;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus
+{
+	background-color:#f6f3c2;
+}
+.login-form .login-submit{
+	margin-top:-1px;
+	margin-left:3px;
+	color:white;
+	background-color:#339cf5;
+	border:none;
+	padding:3px 20px 3px 20px;
+	z-index:2000;
+	border-radius:0px;
+	text-decoratoin:none;
+}
+.login-form .login-submit:hover{background-color:#2586d8;border:none;color:#fff;}
+.navbar-default .fotget-password{
+	margin-top:57px;
+	white-space:nowrap;
+    color:white;
+	float:right;
+	font-family:monospace;
+	font-size:14px;
+	margin-right:-272px;
+	z-index:2000;
+}
+
+.wrapper{
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	width:100%;
+	height:575px;
+	margin-top:-22px;
+	
+	
+}
+.slider{
+	float:left;
+	width:70%;
+	max-width:800px;
+	height:400px;
+	
+}
+.signup_area{
+	float:right;
+	width:25%;
+	margin-right:1%;
+	margin-left:4%;
+	}
+.signup_area .signup_form{
+	position:relative;
+	display:block;
+    
+}
+.signup_area input[type=text],
+.signup_area input[type=email],
+.signup_area input[type=password]{
+	height:35px;
+	margin-bottom:10px;
+	border-radius:0px;
+	border:1px solid #e2e0e0;
+}
+.signup_submit{
+	
+text-decoration:none;
+background:#339cf5;
+        
+	color:#fff;
+	border:none;
+	text-align:center;
+	padding:7px 30px 8px 30px;
+	font-size:20px;
+
+}
+
+.signup_submit:hover{background-color:#2586d8;text-decoration:none;color:#fff;}
+.signup_submit:focus{background-color:#2586d8;text-decoration:none;color:#fff;}
+.color-1{margin-top:10px;}
+.fb_signup_button{
+	border:none;
+	padding:5px 24px 7px 24px;
+	color:#fff;
+	font-size:20px;
+	background:#339cf5;
+	text-decoration:none;
+	
+}
+.signup_text{font-family:Roboto;
+	margin-top:-30px;
+}
+
+.fb_signup_button:hover{background-color:#2586d8;text-decoration:none;color:#fff;}
+.fb_signup_button:focus{background-color:#2586d8;text-decoration:none;color:#fff;}
+hr {
+     color:#339cf5;
+     background:#339cf5; 
+     width:303px; 
+     height: 3px;
+	 margin-left:0px;
+	margin-top:-3px;
+}
+
+input::-webkit-input-placeholder {
+ padding-left:6px;
+	font-size:14px;
+	font-family:arial;
+	
+}
+input:-moz-placeholder { /* Firefox 18- */
+padding-left:8px;
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+padding-left:8px;
+}
+ 
+input:-ms-input-placeholder {  
+padding-left:8px;
+}
+.alert{padding:5px;background:#eec6c8;color:#f04951;border:none;margin-bottom:0px;}
+
+

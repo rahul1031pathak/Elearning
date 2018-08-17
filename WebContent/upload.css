@@ -1,0 +1,145 @@
+@CHARSET "ISO-8859-1";
+	
+body{
+background-color:#E6E6FA;
+    }
+.askquestion
+    {
+    max-width: 700px;
+    margin: 10px auto;
+    padding: 16px;
+    background: #F7F7F7;
+	height:auto;
+	}
+   h1
+   {
+   font-family:aller;
+   font-size:30px;
+    background: #43D1AF;
+    padding:10px 0;
+	font-family:aller;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
+    }
+   .askquestion input[type="text"],
+   .askquestion input[type="date"],
+   .askquestion input[type="datetime"],
+   .askquestion input[type="email"],
+   .askquestion input[type="number"],
+   .askquestion input[type="search"],
+   .askquestion input[type="time"],
+   .askwuestioninput[type="url"],
+   .askquestion textarea,
+   .askquestion select
+    {
+	-webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline:none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    padding:2px;
+    color: #555;
+    
+	}
+  
+  
+    .askquestion input[type="submit"],
+	.form-style-6 input[type="button"]
+	{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding:5px;
+    background: #43D1AF;
+    border-bottom: 2px solid #30C29E;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;  
+    font-family:aller;
+    font-size:22px; 	
+    color: #fff;
+    }
+	
+    .askquestion input[type="submit"]:hover,
+	.askquestion input[type="button"]:hover
+	{
+    background: #2EBC99;
+    }
+	.dropdown select 
+	{
+    color:#A9A9A9;
+	letter-spacing:2px;
+	font-size:20px;
+	font-family:aller;
+    }
+   .inputfile {
+    width:0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 80%;
+    font-size:20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+
+/* style 1 */
+
+.inputfile-1 + label {
+    color: #f1e5e6;
+    background-color:#43D1AF;
+}
+
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+    background-color:#2EBC99;
+}
+	

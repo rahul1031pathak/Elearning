@@ -1,0 +1,63 @@
+*, *:before, *:after{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+
+.inputBtnSection{
+    display:inline-block;
+    vertical-align:top;
+    font-size:0;
+    font-family:monospace;
+}
+.disableInputField{
+    display:inline-block;
+    vertical-align:top;
+	border:1px solid #e2e0e0;
+    height: 32px;
+    margin: 0;
+    font-size:14px;
+    padding:0 3px;
+}
+
+.fileUpload {
+	position: relative;
+	overflow: hidden;
+    border:solid 1px #339cf5;
+    display:inline-block;
+    vertical-align:top;
+}
+.profileuploadbtn{
+    display:inline-block;
+    vertical-align:top;
+    background:#339cf5;
+	font-family: monospace;
+    font-size:14px;
+    padding:4px 16px;
+    height:30px;
+    line-height:22px;
+    color:#fff;
+}
+.proofuploadbtn{
+	display:inline-block;
+    vertical-align:top;
+    background:#339cf5;
+	font-family: monospace;
+    font-size:14px;
+    padding:4px 24px;
+    height:30px;
+    line-height:22px;
+    color:#fff;
+}
+
+.fileUpload input.upload {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=5);
+}

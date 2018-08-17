@@ -1,0 +1,473 @@
+@CHARSET "ISO-8859-1";
+
+html,
+body{
+	font-family: 'PT Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	background: #eee;
+}
+
+* {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 100%;
+	font-weight: normal;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: none;
+	box-shadow: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+.main_container {
+  position:relative;
+	max-width:1200px;
+	display:flex;
+	flex-direction:row;
+	width:100%;
+	height:auto;
+	margin:20px auto;
+	background:#FFF;
+	.box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.some_information{
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ width:350px;
+ background:#2874f0;
+ float:left;
+}
+.some_information p
+{
+margin:0;
+padding:0;
+color:#fff;
+font-size:20px;
+padding-top:0px;
+text-align:center;
+overflow:hidden;
+}
+.some_information img
+{
+width:200px;
+height:200px;
+margin:120px auto;
+ margin-bottom:0;
+}
+
+.institution_form{
+display:flex;
+width:calc(100% - 500px);
+padding-left:30px;
+padding-right:30px;
+float:left;
+background:#fff;
+}
+.image_upload{
+width:500px;
+float:left;
+margin:10px 20px 0px 0px;;
+
+}
+form {
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin:0;
+	padding:0;
+	background: #fff;
+	
+    }
+
+.form-group {
+	position: relative;
+	max-width: 100%;
+	height: 70px;
+	margin:0;
+	padding:0;
+}
+
+input {
+	font-size: 16px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	padding: 8px 0 16px;
+	color: rgba(0, 0, 0, .87);
+	background: transparent;
+     }
+
+input[type='text'],input[type='number']{
+	padding: 8px 24px 16px 5px;
+}
+
+input:focus {
+	outline: none;
+}
+
+label {
+	font-size: 16px;
+	position: absolute;
+	top: 21px;
+	left: 0;
+	display: block;
+	width: 100%;
+	font-weight:100;
+	letter-spacing:0;
+	font-family: 'Ubuntu', sans-serif;
+    padding: 18px 10px 10px 5px;
+	-webkit-transition: all .45s;
+	-moz-transition: all .45s;
+	-ms-transition: all .45s;
+	-o-transition: all .45s;
+	transition: all .45s;
+	pointer-events: none;
+	color: rgba(0, 0, 0, .54);
+}
+
+input:focus + label {
+	font-size: 12px;
+	top: 0;
+	left: 0;
+	color: #2874f0;
+}
+
+input.fixed + label {
+	font-size: 12px;
+	top: 0;
+	left: 0;
+	color:#878787;
+}
+
+input:focus.fixed + label {
+	color: #2874f0;
+}
+
+input ~ .bar {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	left:0;
+	.margin-bottom: 7px;
+	background: rgba(0, 0, 0, .12);
+}
+
+input ~ .bar::before,
+input ~ .bar::after {
+	position: absolute;
+	bottom: 0;
+	width: 0;
+	height: 2px;
+	content: '';
+	-webkit-transition: all .45s;
+	-moz-transition: all .45s;
+	-ms-transition: all .45s;
+	-o-transition: all .45s;
+	transition: all .45s;
+	background: #2874f0;
+}
+
+input ~ .bar::before {
+	left: 50%;
+}
+
+input ~ .bar::after {
+	right: 50%;
+}
+
+input:focus ~ .bar::before,
+input:focus ~ .bar::after {
+	width: 50%;
+}
+
+input:invalid ~ .error {
+	display: block;
+}
+
+
+
+input:valid ~ .error {
+	display: none;
+}
+input ~ .visible {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 24px;
+	height: 24px;
+	margin-bottom: 14px;
+	cursor: pointer;
+	background: transparent;
+}
+
+input ~ .visible:active {
+	background: transparent;
+}
+
+.form-submit {
+	width: 100%;
+	height: auto;
+	padding-top: 10px;
+	padding-bottom:20px;
+}
+
+button {
+	font-size: 16px;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 36px;
+	padding: 0;
+	cursor: pointer;
+	text-transform: uppercase;
+	color: #fff;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	background: #2874f0;
+      }
+
+button:hover {
+	background: #2f87d1;
+	-webkit-box-shadow: 0 1px 2.5px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+	-moz-box-shadow: 0 1px 2.5px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+	box-shadow: 0 1px 2.5px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+}
+
+.ripple {
+	position: absolute;
+	display: block;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	transform: scale(0);
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, .3);
+}
+
+.animate {
+	-webkit-animation: ripple .65s linear;
+	-moz-animation: ripple .65s linear;
+	-ms-animation: ripple .65s linear;
+	-o-animation: ripple .65s linear;
+	animation: ripple .65s linear;
+}
+
+@-webkit-keyframes ripple {
+	100% {
+		-webkit-transform: scale(2.5);
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes ripple {
+	100% {
+		-moz-transform: scale(2.5);
+		opacity: 0;
+	}
+}
+
+@-o-keyframes ripple {
+	100% {
+		-o-transform: scale(2.5);
+		opacity: 0;
+	}
+}
+
+@keyframes ripple {
+	100% {
+		transform: scale(2.5);
+		opacity: 0;
+	}
+}
+
+
+
+
+<!-- SELECT DROPDOWN STYLE -->
+
+.dropdown {
+  position: relative;
+  display:block;
+  margin: 0px 16px;
+  padding:0;
+  cursor:pointer;
+}
+
+
+.dropdown select {
+  width:100%;
+  margin:0;
+  background:none;
+  border: 1px solid transparent;
+  outline: none;
+  cursor:pointer;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* Remove select styling */
+  appearance: none;
+  -webkit-appearance: none;
+  /* Magic font size number to prevent iOS text zoom */
+  font-size:1.25em;
+  /* General select styles: change as needed */
+  /* font-weight: bold; */
+  color: #878787;
+  padding: .6em 1.9em .6em .5em;
+  line-height:1.3;
+}
+.dropdown select {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.dropdown::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 8px;
+  top: 50%;
+  right: 1em;
+  margin-top:-4px;
+  z-index: 2;
+  background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 12'%3E%3Cpolygon fill='rgb(102,102,102)' points='8,12 0,0 16,0'/%3E%3C/svg%3E") 0 0 no-repeat;  
+  /* These hacks make the select behind the arrow clickable in some browsers */
+  pointer-events:none;
+}
+
+/* This hides native dropdown button arrow in IE 10/11+ so it will have the custom appearance, IE 9 and earlier get a native select */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .dropdown select::-ms-expand {
+    display: none;
+  }
+  /* Removes the odd blue bg color behind the text in IE 10/11 and sets the text to match the focus style text */
+  select:focus::-ms-value {
+    background: transparent;
+    color: #222;
+  }
+}
+
+
+
+
+
+
+_::-moz-progress-bar, body:last-child .dropdown {
+  overflow: hidden;
+}
+/* Show only the custom icon */
+_::-moz-progress-bar, body:last-child .dropdown:after {
+  display: block;
+}
+_::-moz-progress-bar, body:last-child .dropdown select {
+  /* increase padding to make room for menu icon */
+  padding-right: 1.9em;
+  /* `window` appearance with these text-indent and text-overflow values will hide the arrow FF up to v30 */
+  -moz-appearance: window;
+  text-indent: 0.01px;
+  text-overflow: "";
+  /* for FF 30+ on Windows 8, we need to make the select a bit longer to hide the native arrow */
+  width: 110%;
+}
+
+/
+
+
+_::-moz-progress-bar, body:last-child .dropdown select:focus {
+  outline: 2px solid rgba(180,222,250, .7);
+}
+
+
+
+x:-o-prefocus, .dropdown::after {
+  display:none;
+}
+.dropdown:hover {
+  .border:1px solid #878787;
+}
+
+/* Focus style */
+select:focus {
+  outline:none;
+  box-shadow:none;
+  background-color:transparent;
+  color: #222;
+  .border:1px solid #878787;
+}
+
+
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+option {
+  font-weight:100;
+  color:#444;
+  font-family:'PT Sans', sans-serif;
+}
+#colorselector option:first-child
+{
+display:none;
+}
+
+
+
+.button {
+  .border: 1px solid #bbb;
+  border-radius: .3em;
+  box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+  background: #f3f3f3; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C */
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+    length:6;
+}
+.textarea_field{
+width:100%;
+margin-top:10px;
+}
+.textarea_field textarea{
+font-family: 'Ubuntu', sans-serif;
+font-weight:100;
+width:100%;
+border:1px solid rgba(0, 0, 0, .12);
+padding-left:5px;
+border-radius:2px;
+color:#444;
+height:70px;
+resize:none;
+}
+.textarea_field textarea:focus
+{
+border-radius:2px;
+outline:none;
+
+}
+textarea::-webkit-input-placeholder {
+	font-size:16px;
+	font-family:'PT Sans', sans-serif;
+	font-weight:100!important;
+	color:#878787;
+}

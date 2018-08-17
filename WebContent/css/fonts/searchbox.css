@@ -1,0 +1,107 @@
+#wrapp_all{
+           position:relative;
+		   top:20px;
+		   left:200px;
+           width:447px;
+		   height:30px;
+		   
+           }
+
+#searchinput{   width:250px;
+                height:28px;
+				margin-left:0px;
+                background:#e7e7e7;
+                border:0px solid #dbdbdb;
+}
+#searchinput:focus{
+          outline:none;
+                  }
+#searchinput:hover{
+     background-color:#ffffff;
+                  }				  
+				  
+#searchsubmit {
+               margin-left:400px;
+			   margin-top:-28px;
+				float:left;
+                height:28px;
+                border:2px solid #207cca;
+                background-color:#207cca;
+                color:#fafafa;
+}
+#searchsubmit:hover  {
+                background-color:#fafafa;
+                color:#207cca;
+				-webkit-appearance:none;
+}
+/* dropdown styling */
+  .dropdown {
+  float:left;
+  position: relative;
+  overflow: hidden;
+  height: 28px;
+  width: 150px;
+  background:#f3f3f3;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+.dropdown:before, .dropdown:after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 9px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 4px dashed;
+  border-color: #888 transparent;
+  pointer-events: none;
+}
+.dropdown:before {
+  border-bottom-style: solid;
+  border-top: none;
+}
+.dropdown:after {
+  margin-top: 7px;
+  border-top-style: solid;
+  border-bottom: none;
+}
+
+.dropdown-select {
+  position: relative;
+  width: 130%;
+  margin: 0;
+  padding: 6px 8px 6px 10px;
+  height: 28px;
+  line-height: 14px;
+  font-size: 12px;
+  color: #62717a;
+  text-shadow: 0 1px white;
+  /* Fallback for IE 8 */
+  background: #f2f2f2;
+  /* "transparent" doesn't work with Opera */
+  background: rgba(0, 0, 0, 0) !important;
+  border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+.dropdown-select:focus {
+  z-index: 3;
+  width: 100%;
+  color: #394349;
+  outline:none;
+  }
+.dropdown-select > option {
+  margin: 3px;
+  padding: 6px 8px;
+  text-shadow: none;
+  background: #f2f2f2;
+  border-radius: 3px;
+  cursor: pointer;
+}
+/* Dirty fix for Firefox adding padding where it shouldn't. */
+@-moz-document url-prefix() {
+  .dropdown-select {
+    padding-left: 6px;
+  }
+}

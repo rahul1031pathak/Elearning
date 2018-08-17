@@ -1,0 +1,14 @@
+.wrapper{width:100%;height:auto;}
+.slider{margin-left:0px;margin-right:0%;}
+.signup_area{margin-left:15px;}
+.signup_text{display:none;}
+.login-form input[type=text],
+.login-form input[type=password]{
+	border:1px solid #c2e5f5;
+}
+.navbar-default  .navbar-nav .fb-login{
+	margin-right:5px;
+}
+.navbar-default .navbar-brand{
+	padding-left:10px;
+}

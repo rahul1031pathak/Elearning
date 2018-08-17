@@ -1,0 +1,214 @@
+@CHARSET "ISO-8859-1";
+
+
+.main{
+  font: normal 14px/100% "Andale Mono", AndaleMono, monospace;
+  width:800px;
+  background-color:#f0f0f0;
+  margin:10px auto;
+  position:relative;
+  padding:13px;
+  
+     }
+ h1
+   {
+   font-family:aller;
+   font-size:30px;
+    background: #43D1AF;
+    padding:13px 0;
+	font-family:aller;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 5px -16px;
+    }
+	
+.UploadImage,.inner-addon,#list1
+{
+margin-bottom:7px;
+}	
+#flip{
+    box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+    width: 100%;
+    padding:15px;
+    background: #43D1AF;
+    border-bottom: 2px solid #30C29E;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;  
+    font-family:aller;
+    font-size:25px; 	
+    color: #fff;
+    }
+#flip:hover{
+background: #2EBC99;
+    
+         }
+		 input["type=text"]
+		 {
+		 background-color:f0f0f0;
+		 }
+	
+.form-control:focus{
+          outline:0;
+		  border:1px solid #43D1AF;
+		  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+           }		 
+			 
+/* enable absolute positioning */
+.inner-addon {
+  position:relative;
+}
+
+/* style glyph */
+.inner-addon .glyphicon{
+  position:absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align glyph */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input{ 
+    padding-left:  30px; 
+          }
+.right-addon input{
+ padding-right: 30px; 
+ }
+
+.dropdown-check-list1 {
+display: inline-block;
+}
+.dropdown-check-list1 .anchor {
+  position: relative;
+  display: inline-block;
+  background-color:white;
+  padding: 10px 50px 10px 10px;
+  border: 1px solid #ccc;
+}
+
+.dropdown-check-list1 .anchor:active:after {
+  right: 8px;
+  top: 21%;
+}
+.dropdown-check-list1 ul.items1 {
+  padding: 2px;
+  display:block;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.dropdown-check-list1 ul.items1 li {
+  list-style: none;
+}
+.dropdown-check-list2 {
+    display: inline-block;
+    position:relative;
+    float:right;
+	margin-right:40%;
+    
+}
+.dropdown-check-list2 .anchor {
+  position: relative;
+  display: inline-block;
+  background-color:white;
+  padding: 10px 50px 10px 10px;
+  border: 1px solid #ccc;
+}
+
+.dropdown-check-list2 ul.items2 {
+  padding: 2px;
+  display:block;
+  margin:0;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.dropdown-check-list2 ul.items2 li {
+  list-style: none;
+}
+.inputfile {
+    width:0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width:250px;
+    font-size:20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+
+/* style 1 */
+
+.inputfile-1 + label,.inputfile-2+label {
+    color: #f1e5e6;
+    background-color:#43D1AF;
+}
+
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover, 
+.inputfile-2:focus + label,
+.inputfile-2.has-focus + label,
+.inputfile-2 + label:hover 
+{
+    background-color:#2EBC99;
+} 
+	#pr     {
+			  float:right;
+			margin-top:-148px;
+            margin-right:250px;	
+			}
+#upic   {
+        float:right;
+		margin-right:230px;
+        }			
+ 
+ @media only screen and (max-width: 768px){
+ .main{
+     width:100%;
+	 margin:5px;
+	 }
+	 }
+

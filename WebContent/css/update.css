@@ -1,0 +1,255 @@
+html,body{
+    background:#eee;
+    margin:0;
+    padding:0;
+    
+}
+.UpdateProfile{
+    max-width:900px;
+    width:100%;
+    position:relative;
+    display:-webkit-box;
+    display:-ms-flexbox;
+     top:10px;
+    display:flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    
+    height:auto;
+    margin:2px auto;
+    background:#f9f9f9;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+/*...............  image..............*/
+.profileANDRproof{
+    width:100%;
+    height:70px;
+    background-color: #266b91;
+    border-radius: 3px;
+    text-align: center;
+    opacity:1;
+     
+}
+.profileANDRproof h3{
+    color:#fff;
+    letter-spacing:1px;
+    word-spacing:4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:100;
+}
+.square-flip{
+		-webkit-perspective: 1000;
+		-ms-perspective: 1000;
+		perspective: 1000;
+		-webkit-transform: perspective(1000px);
+		transform: perspective(1000px);
+
+		-webkit-transform-style: preserve-3d; 
+		transform-style: preserve-3d; 
+
+		/*border:1px solid #efefef;*/
+		
+		position:relative;
+		float:left;
+		margin:20px;
+
+		}
+		.square-flip{
+			width:118px;
+			height:118px;
+		}
+		.square,.square2{
+			width:100%;
+			height:100%;
+            border-radius:100%;
+		}
+		.square{
+
+			background-size: cover;
+			background-position:center center;
+			-webkit-transition:-webkit-transform 0.60s cubic-bezier(.5,.3,.3,1);
+			transition:-webkit-transform 0.60s cubic-bezier(.5,.3,.3,1);
+			transition:transform 0.60s cubic-bezier(.5,.3,.3,1);
+			transition: transform 0.60s cubic-bezier(.5,.3,.3,1), -webkit-transform 0.60s cubic-bezier(.5,.3,.3,1);
+			    -webkit-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+			overflow: hidden;
+             opacity: 1;
+			position:absolute;
+			top:0;
+
+
+			-webkit-backface-visibility: hidden; 
+			backface-visibility: hidden;
+		}
+		.square-flip .square{
+			-webkit-transform: rotateY(0deg);
+			transform: rotateY(0deg);
+			-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+			z-index:1;
+		}
+		.square-flip:hover .square{
+			-webkit-transform: rotateY(-180deg);
+			transform: rotateY(-180deg);
+			-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+		}
+
+
+		.square2{
+
+			background-size: cover;
+			background-position:center center;
+			-webkit-transition:-webkit-transform 0.60s cubic-bezier(.5,.3,.3,1);
+			transition:-webkit-transform 0.60s cubic-bezier(.5,.3,.3,1);
+			transition:transform 0.60s cubic-bezier(.5,.3,.3,1);
+			transition: transform 0.60s cubic-bezier(.5,.3,.3,1), -webkit-transform 0.60s cubic-bezier(.5,.3,.3,1);
+			    -webkit-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
+			overflow: hidden;
+
+			position:absolute;
+			top:0;
+
+			-webkit-backface-visibility: hidden; 
+			backface-visibility: hidden;
+		}
+		.square-flip .square2{
+			-webkit-transform: rotateY(180deg);
+			transform: rotateY(180deg);
+			-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+			z-index:1;
+		}
+		.square-flip:hover .square2{
+			-webkit-transform: rotateY(0deg);
+			transform: rotateY(0deg);
+			-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+		}
+/*..................image End .............*/
+.updateFormArea{
+    position:relative;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    max-width:400px;
+    width:100%;
+    display:flex;
+    margin-top:15px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin:10px auto;
+}
+.input-label {
+  margin-left:0px;
+    margin-top:20px;
+  position: relative;
+  padding:0;
+}
+
+.input-label > input {
+	border: 0;
+	color:#409eca;
+	height: 20px;
+    width:100%!important;
+    font-family:Roboto,Tahoma;
+    font-weight:100;
+	outline: none;
+	background: transparent;
+	border-bottom: 1px solid #47ADDD;
+
+}
+.input-label > input:focus{
+  border-bottom: 2px solid #47ADDD;
+    
+}
+.input-label > label {
+	top: 0;
+	left: 0;
+	color: #a3a2a3;
+	cursor: text;
+	font-size: 13px;
+	margin-left: 10px;
+	position: absolute;
+   font-family:Roboto,Tahoma;
+    font-weight: 100;
+	-webkit-transition:top .5s, margin-left .5s, font-size .5s, color .5s;
+	transition: top .5s, margin-left .5s, font-size .5s, color .5s;
+}
+
+.input-label > input:focus ~ label,
+.input-label > label.active {
+	top: -15px;
+	color: #409eca;
+	margin-left: 0;
+	font-size: 10px;
+
+}
+.updateProfileSubmitButton{
+	position:relative;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    color:#fff;
+    border:none;
+	font-family:Roboto,Tahoma;
+	font-size:16px;
+	text-align:center;
+    margin:10px auto;
+	background-color:#00b9f5;
+	padding:8px 40px 8px 40px;;
+    box-shadow: 0 1px 6px rgba(0,0,0,.12),0 1px 6px rgba(0,0,0,.12);
+	
+}
+.updateProfileSubmitButton:hover,.updateProfileSubmitButton:active,.updateProfileSubmitButton:focus
+{
+	
+     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s;
+      border:none;
+}
+.WAYourself{
+    width:100%;
+    background:transparent;
+    margin-top:5px;
+    border:none;
+    border-bottom: 1px solid #47ADDD;
+}
+.WAYourself:focus{
+    outline: 1px solid #47ADDD;
+}
+::-webkit-input-placeholder {
+   color:#a3a2a3;
+   font-size:13px!important;
+  font-family:Roboto,Tahoma;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color:#a3a2a3;
+   font-size:13px!important;
+  font-family:Roboto,Tahoma;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color:#a3a2a3;
+   font-size:13px!important;
+  font-family:Roboto,Tahoma; 
+}
+
+:-ms-input-placeholder {  
+    color:#a3a2a3;
+   font-size:13px!important;
+  font-family:Roboto,Tahoma; 
+}
+@media screen and (max-width:400px)
+{
+    .updateFormArea{
+        max-width:250px;
+        width:100%;
+    } 
+    .chosen-select{
+        max-width:250px!important;
+    }    
+}

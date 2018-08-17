@@ -1,0 +1,59 @@
+.wrapper{display:block;width:100%;height:auto;}
+.slider{clear:both;width:100%;min-width:100%;float:none;margin-left:0px;}
+.signup_area{clear:both;float:none;width:100%;margin-left:0px;margin-top:-200px;}
+.navbar-default .navbar-brand{
+	margin-top:-19px;
+	padding-left:0px;
+	height:50px;
+	width:75%;
+}
+.navbar-default .navbar-header{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.login-form input[type=text],
+.login-form input[type=password]{
+	border:1px solid #c2e5f5;
+	width:200px;
+	margin-bottom:5px;
+	background-color:white;
+}
+.navbar-default  .navbar-nav .fb-login{
+	width:100%;
+	max-width:105px;
+	margin-left:3px;
+	margin-top:-1px;
+}
+.navbar-default .fotget-password{
+	margin-right:0px;
+	margin-top:5px;
+	float:left;
+	
+	z-index:2000!important;
+}
+.login-form .login-submit{
+	width:100%;
+	max-width:105px;
+	margin-bottom:7px;
+}
+.navbar-default  .navbar-nav .login-form{
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	
+	        -webkit-box-orient:vertical;
+	
+	        -webkit-box-direction:normal;
+	
+	        -webkit-flex-direction:column;
+	
+	            -ms-flex-direction:column;
+	
+	                flex-direction:column;
+
+}
+

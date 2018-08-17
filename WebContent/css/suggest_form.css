@@ -1,0 +1,29 @@
+    .input-group textarea{height:100px !important}
+	.input-group{margin-bottom:7px}
+	
+	.input-group-addon,.form-control{border-radius:0px !important font-family:"Verdana";}
+	.input-group-addon{color:#06C}
+	.c-info .glyphicon{width:5px; text-align:left; color:#099}
+	.alert{border-radius:0px}
+    .btn{font-weight:900;background-color:#00a2b5;color:white;font-size:14px;float:right;}
+    .btn:hover{background-color:white;color:black;border:2px solid #00a2b5;}
+    .form-control::-webkit-input-placeholder {
+font-family:"Verdana"!important;
+    font-size:15px;
+}
+ 
+.form-control:-moz-placeholder { 
+font-family:"Verdana"
+    font-size:15px;
+}
+ 
+.form-control::-moz-placeholder {  
+font-family:"Verdana"
+    font-size:15px;
+}
+ 
+.form-control:-ms-input-placeholder {  
+font-family:"Verdana"
+    font-size:15px;
+}
+.form-control::-webkit-input-placeholder{font-family:"Verdana";font-size:15px;}

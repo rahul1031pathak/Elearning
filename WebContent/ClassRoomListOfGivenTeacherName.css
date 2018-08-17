@@ -1,0 +1,164 @@
+@CHARSET "ISO-8859-1";
+
+{
+   -webkit-box-sizing: border-box;
+   -ms-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+  }
+  html,body {
+  height: 100%;
+   background-color:#ecebeb;
+            }
+
+        	
+        
+.img-rounded{
+	 position:relative;
+	 width:100px;
+	  height:100px;
+}        
+        
+ .middleside{
+         position:relative;
+         min-width:700px;
+         float:left;
+		 width:96%;
+		 margin-top:0px;
+		 margin-left:2%;
+		 margin-right:2%;
+		 background-color:#f8f8f9;
+		 -webkit-box-shadow: 2px 1px 21px -4px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 1px 21px -4px rgba(0,0,0,0.75);
+         box-shadow: 2px 1px 21px -4px rgba(0,0,0,0.75);
+		 
+         }
+
+.proofimage{
+     float:left;
+       width:15%;
+	   height:120px;
+	  margin-bottom:0px;
+    
+           }
+.namei{
+       display:block;
+      float:left;
+	  font-family:Futura;
+	  width:60%;
+	  height:120px;
+	 
+      }	
+.tname{
+display:block;
+font-size:25px;
+margin-top:40px;
+color:white;
+              }
+.iname{
+display:block;
+font-size:25px;
+color:white;
+              }	  
+.cms table tr td label span:first-child{
+         color:#0c95d9;
+		 font-family:Geneva;
+	}
+	
+.cms{
+    position:relative;
+    float:left;
+	margin-left:10px;
+	margin-top:14px;
+	font-family:arial;
+    }
+.cn{
+         position:relative;
+         display:block;
+		 font-size:18px;
+		 
+          }	
+a:link {
+    text-decoration: none;
+    color:#505f64;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration:underline;
+    color:#f56f00;
+	font-family:arial;
+}
+
+a:active {
+    text-decoration:none;
+         }
+
+.cms table tr td{
+              padding:10px;
+                }
+.badge{				
+background-color:#47c2ef;
+color:#ececec;			
+}
+.colorpart{
+  width:100%;
+  height:120px;
+  background: red;
+  background: -webkit-linear-gradient(left,#1d95cf, #38d1fd); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, red, yellow); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, red, yellow); /* For Firefox 3.6 to 15 */
+  color:white;
+  z-index:-1px;
+
+     }	
+hr {
+    display: block;
+	width:100%;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0; 
+}	
+.profileimage{
+
+    float:right;
+	 width:15%;
+	 height:120px;
+           } 
+           #follower{
+        float:left;
+		width:10%;
+		height:120px;
+  }
+#followerpic{
+margin-top:52px;
+    float:left;
+    width:70px;
+	height:70px;
+   }
+#badge{
+margin-top:52px;
+float:left;
+margin-left:-20px;
+background-color:#ececec;
+color:#47c2ef;
+      } 
+#prf{margin-bottom:-117px;margin-left:20px;}
+#pf{float:right;margin-top:20px;margin-right:20px;}	
+@media only screen and (max-width:800px){
+
+.middlepart{width:100%;margin-left:0%;margin-right:0%;}
+.colorpart{display:block;}
+#followpic{margin-left:-200px;float:left;}
+#badge{margin-left:40px;margin-top:-70px;}
+#prf{margin-left:2px;}
+.tname{margin-top:2px;margin-left:1px;}
+.namei{width:40%;}
+#pf{margin-right:1px;float:left;}
+td{display:block;}	
+	
+}					

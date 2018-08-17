@@ -1,0 +1,61 @@
+.selectoption{
+    position:relative;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    height:60px;
+    background:#fff;
+    display:flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    box-shadow: 0 1px 0px 0px rgba(0,0,0,0.1); 
+}
+.scrollRadioButton{
+    border:none;
+    background:transparent;
+    font-family:'Roboto', sans-serif;
+    font-weight: 100;
+    color:#555554;
+    outline:0;
+    width:200px;
+    font-size:20px;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.scrollRadioButton1{
+    border:none;
+    background:transparent;
+    font-family:'Roboto', sans-serif;
+    font-weight: 100;
+    color:#555554;
+    outline:0;
+    width:200px;
+    font-size:20px;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.scrollRadioButton:focus,
+.scrollRadioButton:active{
+    border-bottom:4px solid #ffeb3b;
+    color:#000;
+    font-weight:500;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    
+}
+.scrollRadioButton1:focus{
+    border-bottom:4px solid #ffeb3b;
+    color:#000;
+    font-weight:500;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    
+}
+.selecteddivContent{
+    position:relative;
+    width:100%;
+    margin-top:20px;
+    height:100%!important;
+}
